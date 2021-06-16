@@ -12,6 +12,7 @@ docker push dulago/pythondemoapp:version
 ```
 
 
+
 To run the image locally:
 ``` 
 docker run -d -p 80:80 dulago/pythondemoapp:version
