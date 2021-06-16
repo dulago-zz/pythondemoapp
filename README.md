@@ -2,7 +2,7 @@
 This repo contains the configuration to create a simple Python API that runs on Docker and is monitored using Datadog.
 -------------------------------------------------
 -------------------------------------------------
-Before building a new version of the image, uppdate the DD_VERSION variable value on the Dockerfile to the version you're going to build.
+Before building a new version of the image, update the DD_VERSION variable value on the Dockerfile to the version you're going to build.
 To build a new version of the Docker image just run:
 ``` 
 docker build -t dulago/pythondemoapp:version .
