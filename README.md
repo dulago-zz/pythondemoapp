@@ -23,12 +23,12 @@ To _LOCALLY_ create a client and a server container to comunicate with eachother
 
 ``` 
 SERVER
-docker run -d -p 80:80 -e DD_SERVICE=pythonserver -e DD_ENV=dev -e DD_VERSION=version dulago/pythondemoapp:version
+docker run --name pythonserver -d -p 80:80 -e DD_SERVICE=pythonserver -e DD_ENV=dev -e DD_VERSION=version dulago/pythondemoapp:version
 ```
 
 ```
 CLIENT
-docker run -d -p 8090:80 -e DD_SERVICE=pythonclient -e DD_ENV=dev -e DD_VERSION=version dulago/pythondemoapp:version
+docker run --name pythonclient -d -p 8090:80 -e DD_SERVICE=pythonclient -e DD_ENV=dev -e DD_VERSION=version dulago/pythondemoapp:version
 ```
 
 Then call the client container on /httprequest
