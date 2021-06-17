@@ -45,8 +45,6 @@ class Health (Resource):
     def get(self):
         return 'Ta tudo bem'
 
-
-
 api.add_resource(Greeting, '/home') # Route_1
 api.add_resource(Ping, '/ping') # Route_2
 api.add_resource(HttpRequest, '/httprequest') # Route_3
