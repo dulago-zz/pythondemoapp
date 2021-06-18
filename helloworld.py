@@ -37,7 +37,7 @@ class Ping (Resource):
 
 class HttpRequest (Resource):
     def get(self):
-        r = requests.get('http://host.docker.internal/ping')
+        r = requests.get('http://pythonapphost.arthur/ping')
         return json.dumps(r.content).encode('utf-8')
         # return json.dump(r.content)
 
